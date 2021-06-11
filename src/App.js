@@ -1,16 +1,17 @@
-import "./css/general.scss";
+import React, { Component } from "react";
+import { Provider } from "react-redux";
 
-function App() {
-  return (
-    <div className="main-container">
-      <iframe
-        loading="lazy"
-        className="iframe-container"
-        title="DAEgRruUTZg"
-        src="https://www.canva.com/design/DAEgRruUTZg/view?embed"
-      ></iframe>
-    </div>
-  );
+import AppWrapper from "./AppWrapper";
+import store from "./store";
+
+class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <AppWrapper />
+      </Provider>
+    );
+  }
 }
 
 export default App;
