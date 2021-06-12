@@ -5,9 +5,10 @@ class Zioals extends Component {
     return (
       <div className="main-container">
         <iframe
+          id="zioals"
           loading="lazy"
           className="iframe-container"
-          title="DAEgRruUTZg"
+          title="Zioals"
           src="https://www.canva.com/design/DAEgRruUTZg/view?embed"
         ></iframe>
       </div>
